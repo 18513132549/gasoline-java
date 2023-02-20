@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://124.220.46.33:3306/gasoline?useSSL=false&serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&allowPublicKeyRetrieval=true
+    username: root
+    password: tangermao320619
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+  main:
+    allow-circular-references: false
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+#    mapper-locations: classpath:mapper/*.xml
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
